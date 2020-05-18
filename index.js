@@ -1,6 +1,6 @@
 // // Code your solutions in this file
 
-
+const eventNames='birthday'
 function writeCards(names , eventNames){
   let newArr = [];
   for(let i=0 ; i<names.length ; i++){
@@ -8,7 +8,7 @@ function writeCards(names , eventNames){
   }
   return newArr;
 }
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
+writeCards(["Ada", "Brendan", "Ali"], eventNames);
 
 function countDown(num){
   while(num>=0){
