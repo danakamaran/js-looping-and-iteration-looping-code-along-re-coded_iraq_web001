@@ -1,18 +1,19 @@
-const girls =["Ada", "Brendan", "Ali"];
-const eventName = 'surprice';
-function writeCards(girls,eventName){
-  const result=[];
-  for(let i = 0; i < girls.length; i++){
-    result.push(`Thank you, ${girls[i]}, for the wonderful ${eventName} gift!`);
+// // Code your solutions in this file
+
+
+function writeCards(names , eventNames){
+  let newArr = [];
+  for(let i=0 ; i<names.length ; i++){
+    newArr.push(`Thank you, ${names[i]}, for the wonderful ${eventNames}your gift!`);
   }
-  return result;
+  return newArr;
 }
-writeCards(girls,eventName);
+writeCards(["Ada", "Brendan", "Ali"], "birthday");
+
 function countDown(num){
-  let i=num;
-  while(i>-1){
-    console.log(i);
-    i--;
+  while(num>=0){
+    console.log(num);
+    num --;
   }
 }
 countDown(10);
